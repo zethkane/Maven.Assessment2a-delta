@@ -1,5 +1,8 @@
 package rocks.zipcode.assessment2.collections;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Use a map to solve
  */
@@ -9,6 +12,7 @@ public class MonthConversion {
      * @param monthName - name of month
      */
     public void add(Integer monthNumber, String monthName) {
+        Map<Integer, String> calender = new HashMap<>();
 
     }
 

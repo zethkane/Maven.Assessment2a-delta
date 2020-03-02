@@ -7,7 +7,8 @@ public class BasicStringUtils {
      * @return concatenation of `string1` and `string2`
      */
     public static String concatentate(String string1, String string2) {
-        return null;
+        String string3 = string1 + string2;
+        return string3;
     }
 
     /**
@@ -15,7 +16,11 @@ public class BasicStringUtils {
      * @return an identical string with characters in reverse order
      */
     public static String reverse(String string1) {
-        return null;
+        StringBuilder stringBuilder = new StringBuilder(string1);
+        stringBuilder.reverse();
+        String string2 = "";
+        string2 += stringBuilder;
+        return string2;
     }
 
     /**
@@ -24,7 +29,14 @@ public class BasicStringUtils {
      * @return concatenation of the reverse of `string1` and reverse of `string2`
      */
     public static String reverseThenConcatenate(String string1, String string2) {
-        return null;
+        StringBuilder stringBuilder = new StringBuilder(string1);
+        stringBuilder.reverse();
+        StringBuilder stringBuilder1 = new StringBuilder(string2);
+        stringBuilder1.reverse();
+        String string3 = "";
+        string3 += stringBuilder;
+        string3 += stringBuilder1;
+        return string3;
     }
 
     /**
@@ -33,7 +45,8 @@ public class BasicStringUtils {
      * @return `string` with `charactersToRemove` removed
      */
     public static String removeCharacters(String string, String charactersToRemove) {
-        return null;
+        String string2 = string.replace(charactersToRemove, "");
+        return string2;
     }
 
     /**
@@ -42,6 +55,10 @@ public class BasicStringUtils {
      * @return reverse of `string` with `charactersToRemove` removed
      */
     public static String removeCharactersThenReverse(String string, String charactersToRemove) {
-        return null;
+        String string2 = string.replace(charactersToRemove, "");
+        StringBuilder stringBuilder = new StringBuilder(string2);
+        String string3 = "";
+        string3 += stringBuilder.reverse();
+        return string3;
     }
 }
