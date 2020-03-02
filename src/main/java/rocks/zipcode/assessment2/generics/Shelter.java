@@ -1,6 +1,12 @@
 package rocks.zipcode.assessment2.generics;
 
 
+import rocks.zipcode.assessment2.generics.ageable.Ageable;
+import rocks.zipcode.assessment2.generics.ageable.Person;
+
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Shelter is a generic class that holds Objects that extends `Ageable`.
  * For example, if a Person and a Dog extends Ageable, then I can declare the following:
@@ -9,6 +15,7 @@ package rocks.zipcode.assessment2.generics;
  * Shelter<Dog> dogHouse = new Shelter<Dog>();
  */
 public class Shelter<_> {
+    Map<Ageable, Integer> shelter = new HashMap<>();
     public Shelter() {
         throw new NullPointerException();
     }
@@ -17,10 +24,11 @@ public class Shelter<_> {
      * @return the number of item in the shelter
      */
     public int size() {
-        return -1;
+        return shelter.size();
     }
 
     public void add(Object object) {
+       // shelter.put(object, 10);
     }
 
     public Boolean contains(Object object) {
