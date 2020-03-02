@@ -17,7 +17,10 @@
 
 Get the most tests to pass as you can.
 
+Work thru all 5 sections in src>main>java>rocks.zipcode.assessment2
+
+
 ### Setting up the project
 * Ensure that the tests run upon opening the project.
-	* You should see, `Tests Failed: 169 of 169 tests`
+	* You should see, `Tests Failed: 159 of 159 tests`
 
